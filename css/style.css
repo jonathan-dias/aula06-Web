@@ -3,12 +3,6 @@
     float: left;
 }*/
 
-body {
-    background-attachment: fixed;
-    background-color: #000000;
-    background-image: url(BackgroundDK.png);
-}
-
 .content {
     margin: 0 auto;
     width: 1000px;
@@ -41,7 +35,15 @@ body {
 .sectionenter {
     clear: none;
     float: left;
-    width: 500px;
+    width: 900px;
+    font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'auto auto';
+    grid-gap: 20px;
+    padding: 10px
 }
 
 .boxcontent {
@@ -138,12 +140,12 @@ body {
     display: block;
 }
 
-.collumn {
+.column {
     float: left;
     padding: 10px;
 }
 
-.collumn p {
+.column p {
     text-align: center;
 }
 
@@ -154,4 +156,19 @@ body {
     content: "";
     clear: both;
     display: table;
+}
+
+@media screen and (max-width: 500px) {
+    .sectioncontent1 {
+        width: 100%;
+        display: block;
+    }
+    .sectioncontent2 {
+        width: 100%;
+        display: block;
+    }
+    .sectioncontent3 {
+        width: 100%;
+        display: block;
+    }
 }
